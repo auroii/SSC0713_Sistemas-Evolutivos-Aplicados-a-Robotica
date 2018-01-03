@@ -1,0 +1,47 @@
+Autores: Auro Martins Soares Junior
+	 Gisela Moreira Ortt
+
+
+O objetivo deste programa é otimizar a localização e o raio de alcance de uma população de antenas.
+
+
+CONFIGURAÇÕES VITAIS:
+	É necessário um arquivo-matriz constituido de '.' e 'p', onde o '.' significa espaço vazio e o 'p' pessoa,
+	este arquivo o nome do arquivo devera ser alterado no main.cpp(linha 25), por padrão o nome é "primeiro.txt"
+
+
+
+COMO UTILIZAZR O PROGRAMA:
+	Parametros que podem variar:
+		main.cpp:
+			@nome_variavel/define := significado
+				Alteração
+
+			@r := numero de gerações que serão rodadas
+				Mude esse parametro e o AG irá rodar mais ou menos vezes(r vezes)
+
+			@nAntenna := numero de antenas em cada população
+				Implicada na alteração do numero de individuos(antenas) em cada população
+
+			@nPop := numero de populações
+				O ag otimiza um conjunto de populações, logo, alterar esse parametro altera o numero de
+				populacoes que o ag tera em maos para otimizar(a população é constante)
+
+			@"nome_do_arquivo", linha 25 := o nome do arquivo de entrada
+				É a matriz Ambiente
+		Antenna.h:
+			@DIM := dimensão do ambiente
+				mudar isto, muda o tamanho da matriz ambiente
+
+			@MAX_ENERGY := raio maximo da antena
+				muda a maxima capacidade de de uma antena 
+	
+	
+	COMO COPILAR: Basta digitar "make" no terminal(aconselhavel fazer isso num diretório especifico para o programa, pois isso exclui .zip)
+	
+	
+	COMO EXECUTAR: Digite "make run"
+
+	COMO PLOTAR: Depois de executado, digite "make plot" e será plotado os graficos do AG e um esboço do resultado(cidade e posicão/raio das
+		     antenas)
+				
